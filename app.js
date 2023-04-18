@@ -35,36 +35,3 @@ app.use('/conductor', require('./routes/conductor'));
 app.listen(3500, () => {
     console.log('Server is running at port 3500');
 });
-
-
-// test zone
-// var journeydistance = 0;
-    // google api to measure distance 
-    // var dist = function(source, destiny, callback){
-    //     const googleMapsClient  = require('@google/maps').createClient({
-    //         key: 'AIzaSyA5fav9dMmYViqtOp7p_4JEZpVsfBVnzMM'
-    //     });
-    //     googleMapsClient.directions({
-    //         origin: source,
-    //         destination: destiny,
-    //         mode: "driving",
-    //     }, function(err, response) {
-    //         if (!err) {
-    //             console.log(response.json.routes[0].legs[0].distance.value);
-    //             setTimeout(()=> callback(null, {distance : response.json.routes[0].legs[0].distance.value}), 50);
-    //         }else{
-    //             console.error("ERR", err);
-    //         }
-    //     })
-    // }
-
-    // dist('22.266245, 88.354607', '22.238052, 88.272562', (err, res) =>{
-    //     if(!err){
-    //         console.log("Res : ", res.distance);
-    //         journeydistance = res.distance;
-    //         console.log("From Dist : ", journeydistance);
-    //     }
-    // })
-
-    // setTimeout(() => {console.log("It's me : ", journeydistance);}, 1000);
-// test zone

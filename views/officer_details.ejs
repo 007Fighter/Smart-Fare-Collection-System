@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account</title>
+    <link rel="stylesheet" href="/styleMyA.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <%- include('officer_header') %>
+    <div class="container">
+        <div class="title">My Profile</div>
+        <div class="body">
+            <table><br><br>
+            <tr>
+                <td class="tag"><label> <b> Name : </b></label></td>
+                <td><%- user.name %></td>
+                <td class="tag"><label> <b> Designation : </b></label></td>
+                <td><%- user.designation %></td>
+                <td class="tag"><label> <b> User ID : </b></label></td>
+                <td><%- user.user_id %></td>
+            </tr><br>
+            <tr>
+                <td class="tag"><label ><b> Email ID : </b></label></td>
+                <td><%- user.email %></td>
+                <td class="tag"><label><b> Phone Number : </b></label></td>
+                <td><%- user.contact %></td>
+                <td class = "tag"><label><b> My RTO : </b></label></td>
+                <td><%- user.rto_id %></td>
+            </tr>
+            </table>
+        </div>
+        <div class="dialogue"><center>
+            <a class="redirect" href= "/passenger/edit_profile"><input type="button" value="Edit Profile"></a>
+            <a class="redirect" href= "/passenger/edit_pass"><input type="button" value="Change Password"></a>	
+        </center>
+        </div>
+    </div><br><br>
+    <%- include('footer') %>
+</body>
+</html>

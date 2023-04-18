@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registered Vehicles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/pass_manager.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+  <%- include('officer_header') %>
+  <div class="container">
+    <div class="title">
+      <h4>Registered Vehicles</h4>
+    </div>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Vehicle No.</th>
+          <th>Board No.</th>
+          <th>Owner Name </th>
+          <th>Owner Contact</th>
+          <th>Driver Name </th>
+          <th>Driver Contact </th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% vehicles.forEach(function(vehicle){ %>
+            <tr>
+                <td><%= vehicle.rto_id %> <%= vehicle.vehicle_no %></td>
+                <td><%= vehicle.board_mac_no %></td>
+                <td><%= vehicle.owner_name %></td>
+                <td><%= vehicle.owner_contact %></td>
+                <td><%= vehicle.driver_name %></td>
+                <td><%= vehicle.driver_contact %></td>
+                <td><a class="action" href="edit/<%= vehicles.Vehicle_no %>"><input type="button" value="Edit"></a></td>
+            </tr>
+        <% }); %>
+    </tbody>
+  </table>
+  <div class="dialogue">
+    <a class="action" href="/officer/addVehicle"><input type="button" value="Add Vehicles"></a>
+  </div>
+</div><br><br>
+<%- include('footer') %>
+</body>
+</html>

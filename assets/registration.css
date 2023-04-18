@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans');
+body{
+    margin:0;
+    padding: 0;
+    background-image:url(https://wallpapercave.com/uwp/uwp762796.png);
+    height: 100vh;
+    font-family:' Noto Sans TC',sans-serif;
+}
+.container{
+    width: 1200px;
+    margin: 5px auto;
+    position: relative;
+}
+.container .title{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 45px;
+    padding: 25px 0 10px 25px;
+    background: #5c1769;
+    border-bottom: 1px solid #370e3f;
+    border-radius: 100px 100px 0px 0px;
+}
+.container form{
+    position: relative;
+    background:whitesmoke;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 5px 10px 0 30px;
+    box-sizing: border-box;
+    border: 1px solid #6d1c7d;
+    border-radius: 0px 0px 0 0;
+}
+.alert{
+    position:relative;
+    padding:.75rem 1.25rem;
+    width: 90%;
+    margin-bottom:1rem;
+    border:1px solid transparent;
+    border-radius:.25rem;
+    font-size: 12px;
+}
+.alert-dismissible .close{
+    position:absolute;
+    top:0;
+    right: 0px;;
+    padding:.75rem 1.25rem;
+    color:inherit;
+}
+.alert-warning{
+    color:#856404;
+    background-color:#fff3cd;
+    border-color:#ffeeba;
+}
+.close:focus,.close:hover{
+    color:#000;
+    text-decoration:none;
+    opacity:.75
+}
+button.close{
+    padding:0;
+    background-color:transparent;
+    border:0;
+}
+form input, select{
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+}
+
+table{
+    align-content: space-around;
+    height: 20px;
+    width: 100%;
+}
+
+td, option{
+    text-align: justify;
+    height: 40px;
+    width: 17%;
+    padding: 0 2px;
+    border: none;
+    font-size: 15px;
+}
+
+form i{
+    position:absolute;
+    font-size: 20px;
+    color: grey;
+    margin: 15px 0 0 -25px;
+}
+i.fa-lock{
+    margin-top: 5px;
+}
+
+form input[type="password"]{
+    margin-top: 0px;
+}
+
+form input[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 45px;
+    color: whitesmoke;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    background: #5c1769;
+}
+form input[type="submit"]:hover{
+    background: #491254;
+    font-size: large;
+    color: crimson;
+    transition: .5s;
+}
+form input[type="reset"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 45px;
+    color: whitesmoke;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    background: #5c1769;
+}
+form input[type="reset"]:hover{
+    background: #491254;
+    font-size: large;
+    color: crimson;
+    transition: .5s;
+}
+form input[type="button"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 45px;
+    color: whitesmoke;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    background: #5c1769;
+}
+form input[type="button"]:hover{
+    background: #491254;
+    font-size: large;
+    color: crimson;
+    transition: .5s;
+}
+form a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #7f2092;
+    padding: 0 0 0 20px;
+}
+.tag{
+    text-align: right;
+}
+.container .dialogue {
+    position: relative;
+    font-size: 20px;
+    min-height: 50px;
+    color: whitesmoke;
+    padding: 15px 0 20px 25px;
+    background: #5c1769;
+    border-top: 1px solid #370e3f;
+    border-radius: 0 0 100px 100px;
+}
+.dialogue a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    color: crimson;
+    padding: 0 0 0 0px;
+}
+.dialogue a:hover{
+    background: #491254;
+    color: whitesmoke;
+    transition: .5s;
+}

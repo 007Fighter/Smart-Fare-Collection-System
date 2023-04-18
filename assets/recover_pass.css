@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans');
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(https://a-static.besthdwallpaper.com/amazing-night-view-in-the-city-wallpaper-1440x960-11233_37.jpg) ;
+    height: 100vh;
+    font-family: 'Noto Sans TC',sans-serif;
+}
+.container{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    /* padding: 10px; */
+    margin: 50px auto;
+}
+.container .title{
+    font-size: 28px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding:25px 0 30px 20px;     
+    background: #5c1769;
+    border-bottom: 1px solid #370e3f;
+    border-radius: 5px 5px 1 0;
+
+}
+.container form{
+    position: absolute;
+    background: rgb(227, 226, 226);
+    width: 100%;
+    padding: 50px 10px 0 20px;
+    box-sizing: border-box;
+    border: 1px solid #6d1c7d;
+    border-radius: 0 0 5px 5px;
+    font-size: 20px;
+}
+form input{
+    height: 50px;
+    width: 90%;
+    padding: 0 8px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    font-size: 18px;
+    outline: none;
+}
+form input[type="Submit"]:hover{
+    background: #491254;
+   transition: .5s;
+}
+form input[type="Submit"]{
+   /* background: #491254;
+   transition: .5s; */
+   /* padding: 0 0 0 20px; */
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 130px;
+   height: 45px;
+   cursor: pointer;
+   line-height: 45px;
+   border-radius: 45px;
+   border-radius: 5px;
+}
+form a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #7f2092;
+    padding: 0 0 0 20px;
+}

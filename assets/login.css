@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans');
+body{
+    margin:0;
+    padding: 0;
+    background-image:url(https://external-preview.redd.it/OBdm7RpnfZntgI5oomor7WPd8FgufCMk0yhehFOzpzY.jpg?auto=webp&s=eef260fa956312415135df8f000bb32ebe55f496);
+    height: 100vh;
+    font-family:' Noto Sans TC',sans-serif;
+}
+.container{
+    position: relative;
+    max-width: 430px;
+    height: 400px;
+    margin: 30px auto;
+}
+.container .title{
+    font-size: 28px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 20px 0px 20px 20px;
+    background: #5c1769;
+    border-bottom: 1px solid #370e3f;
+    border-radius: 5px 5px 1 0;
+}
+.container form{
+    position: absolute;
+    background:whitesmoke ;
+    width: 100%;
+    padding: 20px 10px 0 30px;
+    box-sizing:border-box ;
+    border: 1px solid #6d1c7d;
+    border-radius: 0 0 5px 5px;
+}
+.alert{
+    position:relative;
+    padding:.75rem 1.25rem;
+    width: 90%;
+    margin-bottom:1rem;
+    border:1px solid transparent;
+    border-radius:.25rem;
+    font-size: 12px;
+}
+.alert-dismissible .close{
+    position:absolute;
+    top:0;
+    right: 0px;;
+    padding:.75rem 1.25rem;
+    color:inherit;
+}
+.alert-warning{
+    color:#856404;
+    background-color:#fff3cd;
+    border-color:#ffeeba;
+}
+.alert-success{
+    color:#155724;
+    background-color:#d4edda;
+    border-color:#c3e6cb;
+}
+.close:focus,.close:hover{
+    color:#000;
+    text-decoration:none;
+    opacity:.75
+}
+button.close{
+    padding:0;
+    background-color:transparent;
+    border:0;
+}
+form input{
+    height: 50px;
+    width: 90%;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    font-size: 18px;
+    outline: none;
+}
+select{
+    height: 30px;
+    width: 90%;
+    padding: 0 0px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    font-size: 18px;
+    outline: none;
+}
+form input[type="radio"]{
+    height: 20px;
+    width: 20%;
+    /* margin: 0px 0 5px 0; */
+    margin-bottom: 15px;
+}
+form input[type="password"]
+{
+    margin-top: 20px;
+}
+form i{
+    position:absolute;
+    font-size: 25px;
+    color: grey;
+    margin: 15px 0 0 -45px;
+}
+i.fa-lock{
+    margin-top: 35px;
+}
+form input[type="submit"]{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 130px;
+    height: 45px;
+    color: whitesmoke;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    border-radius: 5px;
+    background: #5c1769;
+}
+form input[type="submit"]:hover{
+    background: #491254;
+    transition: .5s;
+}
+form a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #7f2092;
+    padding: 0 0 0 20px;
+}

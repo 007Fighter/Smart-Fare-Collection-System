@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Edit Profile</title>
+        <link rel="stylesheet" href="/registration.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+    <body>
+        <%- include('pass_header') %>
+	<div class="container">
+		<div class="title">Edit Profile</div>
+        <form action="/passenger/update" method="post">
+			<% if(typeof message != "undefined" && message){    %>
+				<div class="alert alert-warning alert-dismissible fade show" role="alert">
+					<strong><%- message %></strong>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			<% }   %>
+			<table>
+			<tr>
+				<td class="tag"><label> <b> Name : </b></label></td>
+                <td><input type="text" name="name" placeholder="<%- user.name %>"></td>
+				<td class="tag"><label> <b> Date of Birth : </b></label></td>
+                <td><input type="text" placeholder="<%- user.dob.toString().substring(3, 16)%>" disabled></td>
+				<td class="tag"><label> <b> Place of Birth : </b></label></td>
+                <td><input type="text" placeholder="<%- user.pob %>" disabled></td>
+            </tr>
+			<tr>
+				<td class="tag"><label> <b> Address : </b></label></td>
+                <td><input type="text" name="address" placeholder="<%- user.address %>"></td>
+                <td class="tag"><label> <b> Pincode : </b></label></td>
+                <td><input type="text" name="pincode" placeholder="<%- user.pincode %>"></td>
+				<td class="tag"><label><b><%- user.id_type %> No. : </b></label>
+				<td><input type="text" name="name" placeholder="<%- user.id_num %>" disabled></td>
+			</tr>
+			<tr>
+				<td class="tag"><label ><b> Email ID : </b></label></td>
+                <td><input type="text" name="email" placeholder="<%- user.email %>"></td>
+				<td class="tag"><label><b> Phone Number : </b></label></td>
+                <td><input type="text" name="phone" placeholder="<%- user.contact %>"></td>
+				<td class = "tag"><label><b> Nearby RTO : </b></label></td>
+                <td><input type="text" name="rto_id" placeholder="<%- user.rto_id %>"></td>
+			</tr>
+			<tr>
+				<td class="tag"><label><b> User ID : </b></label></td>
+                <td><input type="text" name="uid" placeholder="<%- user.user_id %>"></td>
+			</tr>
+			</table><center>
+            <input type="submit" value="Update">
+			<a href="/passenger/profile"><input type="button"  value="Cancel"></a>
+            </center>
+        </form>
+        <div class="dialogue">
+        </div>
+	</div><br/><br/>
+        <%- include('footer') %>
+    </body>
+</html>

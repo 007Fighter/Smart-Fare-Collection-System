@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Account</title>
+        <link rel="stylesheet" href="/styleMyA.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        
+</head>
+<body>
+    <%- include('pass_header') %>
+    <div class="container">
+        <div class="title">My Profile</div>
+        <div class="body">
+            <table>
+            <tr>
+                <td class="tag"><label> <b> Name : </b></label></td>
+                <td><%- user.name %></td>
+                <td class="tag"><label> <b> Date of Birth : </b></label></td>
+                <td><%- user.dob.toString().substring(3, 16) %></td>
+                <td class="tag"><label> <b> Place of Birth : </b></label></td>
+                <td><%- user.pob %></td>
+            </tr>
+            <tr>
+                <td class="tag"><label> <b> Address : </b></label></td>
+                <td><%- user.address %></td>
+                <td class="tag"><label> <b> Pincode : </b></label></td>
+                <td><%- user.pincode %></td>
+                <td class="tag"><label><b><%- user.id_type %> No. : </b></label>
+                <td><%- user.id_num %></td>
+            </tr>
+            <tr>
+                <td class="tag"><label ><b> Email ID : </b></label></td>
+                <td><%- user.email %></td>
+                <td class="tag"><label><b> Phone Number : </b></label></td>
+                <td><%- user.contact %></td>
+                <td class = "tag"><label><b> Nearby RTO : </b></label></td>
+                <td><%- user.rto_id %></td>
+            </tr>
+            <tr>
+                <td class="tag"><label><b> User ID : </b></label></td>
+                <td><%- user.user_id %></td>
+                <td class="tag"><label><b> Card Status : </b></label></td>
+            <% if(user.status == 1){ %>
+                <td>Active</td>
+            <% }else if(user.status == 0){ %>
+                <td>De-Active</td>
+            <% }else if(user.status == -1){ %>
+                <td>Rejected</td>
+            <% } %>
+                <td class="tag"><label><b> Balance : </b></label></td>
+                <td><%- balance %></td>
+            </tr>
+            </table>
+        </div>
+        <div class="dialogue"><center>
+            <a class="redirect" href= "/passenger/edit_profile"><input type="button" value="Edit Profile"></a>
+            <a class="redirect" href= "/passenger/addToken"><input type="button" value="Add Token"></a>	
+        </center>
+        </div>
+    </div><br><br>
+    <%- include('footer') %>
+</body>
+</html>

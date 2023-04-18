@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit vehicle</title>
+	<link rel="stylesheet"  href="/registration.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="title"><b>Edit Vehicle</b></b></div>
+		<form>
+			<table>
+			<tr>
+				<td><label> <b>Vehicle Number</b></label>         
+				<input disabled type="text" placeholder="" name="VehicleNo." required></td> 
+				<td><label> <b> MCU_Board_no </b> </label>     
+				<input type="text" placeholder="Enter MCU Board No." name="MCU_Board_no"></td> 
+			</tr>
+                    
+			<tr>
+				
+				<td><label> <b> Owner Name</b></label>         
+				<input type="text" placeholder="" name="OwnerName" required></td><br><br>
+				
+				<td><label> <b> Owner Contact </b></label>         
+				<input type="number" placeholder="Enter Owner Contact" name="OwnerContact" required></td>
+			</tr>
+            
+			<tr>
+				<td><label> <b> Driver Name </b></label>         
+				<input type="text" placeholder="Enter Driver Name" name="DriverName" required></td>
+
+				
+
+				<td><label><b>Driver Contact </b></label>         
+				<input type="text" placeholder="Enter Driver Contact" name="DriverContact" required></td>
+
+			</tr>
+			
+			</table>
+				<input type="submit" value="Register">
+				<input type="reset"    value="Reset">
+		</form>
+	</div><br><br>
+	<script>
+		function show(){
+			var pswrd = document.getElementById('pswrd');
+			var icon = document.querySelector('.fas');
+			if(pswrd.type==="password"){
+				pswrd.type="text";
+				pswrd.style.marginTop="20px";
+				icon.style.color="#7f2092";
+
+			}else{
+				pswrd.type="password";
+				icon.style.color="grey";
+			}
+		}
+	</script>
+
+
+</body>
+</html>

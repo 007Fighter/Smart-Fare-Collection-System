@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Wallet History</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            background: url(https://www.10wallpaper.com/wallpaper/1366x768/2001/Street_Skyscraper_Bus_2019_Cities_HD_Photo_1366x768.jpg) no-repeat;
+        }
+        .container{
+            min-width: 1300px;
+            height: 500px;
+            margin: 15px auto;
+            padding: 20px;
+        }
+        .child1{
+            width: 70%;
+            float: left;
+            padding: 20px;
+        }
+        .child2{
+            width: 30%;
+            float: left;
+            margin-top: 20px;
+            padding: 20px;
+            background: teal;
+        }
+        .child2 p{
+            color:whitesmoke;
+            font-size: 20px;
+            text-align: center;
+        }
+        .pb-2{
+            text-align: center;
+        }
+        tr{
+            text-align: center;
+        }
+        .child2 input[type="button"]{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 250px;
+            height: 45px;
+            color: whitesmoke;
+            cursor: pointer;
+            line-height: 45px;
+            border-radius: 45px;
+            background: #5c1769;
+        }
+        .child2 input[type="button"]:hover{
+            background: #491254;
+            font-size: large;
+            color: crimson;
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+<%- include('pass_header') %>
+    
+<div class="container">
+    <div class="child1">
+        <section class="bg-light p-3">
+            <h3 class="pb-2"> Transaction History </h3>
+            <div class="table-responsive" id="no-more-tables">
+                <table class="table bg-white">
+                    <thead class="bg-dark text-light">
+                        <tr>
+                            <th>Transaction Type</th>
+                            <th>Transaction Amount</th>
+                            <th>Instant Balance</th>
+                            <th>Transaction Time/Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% rows.forEach(function(row){ %>
+                        <tr>
+                            <td><%- row.trans_type %></td>
+                            <td><%- row.amount %> Tokens</td>
+                            <td><%- row.balance %> Tokens</td>
+                            <td><%- row.time.toString().substring(0, 24) %></td>
+                            <% balance = row.balance %>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div class="child2">
+        <p>Your current balance is: <%- balance %> Tokens. </p><br/><br/>
+        <center><a href="/passenger/addToken"><input type="button" value="Add Token"></a></center>
+    </div>
+</div>
+<%- include('footer') %>
+</body>
+</html>

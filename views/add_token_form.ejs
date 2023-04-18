@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Token</title>
+    <link rel="stylesheet"  href="/registration.css">
+    <style>
+        body{
+            background: url(https://www.10wallpaper.com/wallpaper/1366x768/2001/Street_Skyscraper_Bus_2019_Cities_HD_Photo_1366x768.jpg) no-repeat;
+        }
+        .container{
+            min-width: 800px;
+            min-height: 390px;
+            margin: 20px auto;
+        }
+        form p{
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(37, 4, 11);
+            text-align:end;
+            padding: 20px;
+        }
+        form input[type="number"]{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <%- include('pass_header') %>
+    <div class="container">
+        <div class="title">Add Tokens</div>
+        <form action="/passenger/addToken" method="post"><table>
+            <tr><td><p>Enter Token Amount : </p></td><td>
+                <input type="number" name="tokens" placeholder="Enter no. of Tokens to Add" min="10"></td>
+            </tr></table>
+            <br><center>
+            <input type="submit" value="Add">
+            </center>
+        </form>
+        <div class="dialogue"></div>
+    </div>
+    <%- include('footer') %>
+</body>
+</html>

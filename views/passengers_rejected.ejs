@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rejected Applications</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/pass_manager.css">
+</head>
+<body>
+  <%- include('officer_header') %>
+  <div class="container">
+    <div class="title">
+      <h4>Rejected Applications</h4>
+    </div>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Details</th>
+          <th>Contacts</th>
+          <th>Identity</th>
+          <th>Address</th>
+          <th>Action</th>
+        </tr> 
+      </thead>
+      <tbody>
+          <% passengers.forEach(function(passenger){ %>
+              <tr>
+                  <td>Name : <%= passenger.name %><br> Card No. : <%= passenger.card_no %><br> Passenger ID : <%= passenger.user_id %> </td>
+                  <td>Email : <%= passenger.email %> <br> Contact : <%= passenger.contact %><br>RTO : <%= passenger.rto_id %>  </td>
+                  <td>DOB : <%= passenger.dob.toString().substring(3, 16) %><br> POB : <%= passenger.pob %> <br> <%= passenger.id_type %> : <%= passenger.id_num %>  </td>
+                  <td>Address : <%=passenger.address %><br> Pincode: <%= passenger.pincode %></td>
+                  <td>
+                    <a class="action" href="/officer/editPass/<%= passenger.user_id %>"><input type="button" value="Edit"></a>
+                    <a class="action" href="/officer/accept/<%= passenger.user_id %>"><input type="button" value="Accept"></a>
+                </td>
+              </tr>
+          <% }); %>
+      </tbody>
+    </table>
+    <div class="dialogue">
+    </div>
+  </div>
+  <%- include('footer') %>
+</body>
+</html>

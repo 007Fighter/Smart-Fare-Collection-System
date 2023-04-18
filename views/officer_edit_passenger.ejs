@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit Passenger</title>
+	<link rel="stylesheet"  href="/registration.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+<%- include('officer_header') %>
+	<div class="container">
+		<div class="title"><b>Edit Passenger</b></div>
+		<form action="/officer/updatePassProfile" method="post">
+			<table>
+			<tr>
+				<td class="tag"><label> <b>Name </b></label></td><td>
+				<input type="text" placeholder="<%- passenger.name %>" name="name" required></td> 
+				<td class="tag"><label> <b> Date of Birth </b></label></td><td>
+				<input type="date" name="dob" required></td>
+				<td class="tag"><label> <b> Place of Birth </b></label></td><td> 
+				<input type="text" placeholder="<%- passenger.pob %>" name="pob" required></td>
+			</tr>
+			<tr>
+				<td class="tag"><label> <b> Address </b></label></td><td>
+				<input type="text" placeholder="<%- passenger.address %>" name="address"></td>
+				<td class="tag"><label> <b> Pincode </b></label></td><td>
+				<input type="number" placeholder="<%- passenger.pincode %>" name="pincode" min="100000" required></td>
+				<td class="tag"><label> <b>Card Number </b></label></td><td>
+				<input type="text" placeholder="<%- passenger.card_no %>" name="card_no"></td>
+			</tr>
+			<tr>
+				<td class="tag"><label><b>ID Type : </b></label></td><td>
+				<select name="id_type">
+					<option value="Aadhar">Adhaar Card</option>  
+					<option value="Election">Voter Card</option>  
+					<option value="Passport">Passport</option>  
+					<option value="Driving">Driving License</option>
+				</select></td>
+				<td class="tag"><label><b>ID No. </b></label></td><td>
+				<input type="text" placeholder="<%- passenger.id_num %>" name="Id No." required></td>
+				<td class="tag"><label><b>Card Status</b></label></td><td>
+				<select name="status">  
+					<option value="1">Active</option>  
+					<option value="0">Inactive</option> 
+					<option value="-1">Blocked</option> 
+				</select></td>
+			</tr>
+			<tr>
+				<td class="tag"><label><b>Email</b></label></td><td>
+				<input type="text" placeholder="Enter Passenger Email" name="email"></td>
+				<td class="tag"><label> <b> Contact Number </b></label></td><td>
+				<input type="number" placeholder="<%- passenger.contact %>" name="phone" min="6000000000" required></td>
+				<td class="tag"><label><b>User ID</b></label></td><td>
+				<input type="text" value="<%- passenger.user_id %>" placeholder="<%- passenger.user_id %>" name="uid" required disabled>
+				</td>
+			</tr>
+			</table><center>
+				<input type="submit" value="Update">
+				<a href="/officer/editPass"><input type="button" value="Back"></a>
+			</center>
+		</form>
+		<div class="dialogue">
+		</div>
+	</div><br><br>
+<%- include('footer') %>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>SMART DEPOT</title>
+<style>
+  body{
+    margin:0;
+    padding: 0;
+    background-image:url(https://external-preview.redd.it/OBdm7RpnfZntgI5oomor7WPd8FgufCMk0yhehFOzpzY.jpg?auto=webp&s=eef260fa956312415135df8f000bb32ebe55f496);
+    height: 100vh;
+    font-family:' Noto Sans TC',sans-serif;
+  }
+  .content{
+    height: 600px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(233, 236, 243);
+    /* margin-bottom: 80px; */
+  }
+  nav p{
+    text-align: justify;
+    margin: 20px 40px 20px 40px;
+    font-size: 18px;
+  } 
+  /* #home p{
+    text-align: justify;
+    margin: 20px 40px 20px 40px;
+    font-size: 25px;
+  } */
+  #services p, #faqs p{
+    text-align: center;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+  <%- include('header') %>
+<div class="content">
+<!-- Landing page -->
+
+<!--Remaining section-->
+<nav id="home">
+  <div class="box">
+    <h6>Home</h6>
+    <p>Automated fare collection (AFC) systems are used in many urban public transport systems 
+      around the world. As the designation suggests, these are typically designed with the specific 
+      purpose of automating the ticketing system, easing public transport use for passengers and 
+      adding efficiency to revenue collection operations. Keeping this in mind, we designed our 
+      project to decrease the problems connected with the bus fare collection system.
+    
+    </p>
+  </div>
+</nav>
+<nav id="about">
+  <div class="box">
+    <h6>About</h6>
+    <p>Welcome to the Department of Transport. Our vision is to provide a system 
+      which is less time consumer, eco - friendly i.e., paper work will reduce, easy to interact
+      and also cost efficient.</p>
+  </div>
+</nav>
+<nav id="services">
+  <div class="box">
+    <h6>Services</h6>
+    <p>Various servics prposed by the Authority are :<br>
+    <a>Bus Services</a><br>
+    <a>Train Services</a><br>
+    <a>Taxi Services</a><br>
+    <a>Ferry Services</a><br>
+  </p>
+  </div>
+</nav>
+<nav id="faqs">
+  <div class="box">
+    <h6>FAQs</h6>
+    <p>
+      Query 1 ? Ans. Reply 1...<br><br>
+      Query 2 ? Ans. Reply 2...<br><br>
+      Query 3 ? Ans. Reply 3...<br><br>
+      Query 4 ? Ans. Reply 4...<br><br>
+      Query 5 ? Ans. Reply 5...<br><br>
+      Query 6 ? Ans. Reply 6...
+    </p>
+  </div>
+</nav>
+</div>
+<%- include('footer') %>
+</body>
+</html>

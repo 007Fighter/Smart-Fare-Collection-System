@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Popping:200,300,400,500,600,700,800,900&display=swap');
+nav li{
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+p{
+  font-family: 'Popping', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+a, button{
+  font-family: 'Popping', sans-serif;
+  font-size: 16px;
+  /* font-weight: bold; */
+  color: #ffffff;
+  text-decoration:none ;
+  cursor: pointer;
+}
+nav li a:hover{
+  color: #ffcc33;
+  transition: all 0.3s ease 0s;
+}
+  
+.dropbtn {
+  /* color: rgba(36, 17, 17, 0.107); */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dcd1d1;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(26, 25, 25, 0.804);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: end;
+  display: block;
+  font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: rgb(51, 46, 46);}

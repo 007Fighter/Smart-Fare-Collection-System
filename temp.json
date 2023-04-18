@@ -1,0 +1,309 @@
+{
+    "geocoded_waypoints": [
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJrSe6HPdpAjoRUysIf4l3lpU",
+            "types": [
+                "establishment",
+                "point_of_interest",
+                "store"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJeRZsV15nAjoR7sFidZQNhLU",
+            "types": [
+                "establishment",
+                "point_of_interest",
+                "police"
+            ]
+        }
+    ],
+    "routes": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 22.2752863,
+                    "lng": 88.3591689
+                },
+                "southwest": {
+                    "lat": 22.2349326,
+                    "lng": 88.272519
+                }
+            },
+            "copyrights": "Map data ©2022",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "12.9 km",
+                        "value": 12853
+                    },
+                    "duration": {
+                        "text": "35 mins",
+                        "value": 2077
+                    },
+                    "end_address": "67QF+628, Usthi Rd, Ushti, West Bengal 743375, India",
+                    "end_location": {
+                        "lat": 22.2380522,
+                        "lng": 88.272519
+                    },
+                    "start_address": "Nainan Road Kuldip,High School, Kuldia, West Bengal 743609, India",
+                    "start_location": {
+                        "lat": 22.2661352,
+                        "lng": 88.3547344
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "57 m",
+                                "value": 57
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 10
+                            },
+                            "end_location": {
+                                "lat": 22.2658837,
+                                "lng": 88.355175
+                            },
+                            "html_instructions": "Head <b>east</b> toward <b>Dhamua Kalosh Rd</b>/<wbr/><b>Dhamua - Panchayed Rd</b>/<wbr/><b>Kalas - Nainan Rd</b>",
+                            "polyline": {
+                                "points": "kz{fCaxgzOD[BO@E@E@CBCDCHC@ABCBCDG"
+                            },
+                            "start_location": {
+                                "lat": 22.2661352,
+                                "lng": 88.3547344
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 203
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 54
+                            },
+                            "end_location": {
+                                "lat": 22.267476,
+                                "lng": 88.3554597
+                            },
+                            "html_instructions": "Turn <b>left</b> at Modern Mobile And Gift House onto <b>Dhamua Kalosh Rd</b>/<wbr/><b>Dhamua - Panchayed Rd</b>/<wbr/><b>Kalas - Nainan Rd</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "wx{fC{zgzOAACCCE?GCQAGACACCCCAEAMCUGUCi@COBg@JOHQDI@k@?OCOCI?"
+                            },
+                            "start_location": {
+                                "lat": 22.2658837,
+                                "lng": 88.355175
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.4 km",
+                                "value": 392
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 92
+                            },
+                            "end_location": {
+                                "lat": 22.2672724,
+                                "lng": 88.35885619999999
+                            },
+                            "html_instructions": "Turn <b>right</b> at Haircut<div style=\"font-size:0.9em\">Pass by Nursery (on the left)</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "wb|fCs|gzO?IAY?Q@IBMBQBU@KDOFQFSBMFS@G@C@O@_@A_@@_@?S@E@EDIBEDOBODU?E@AAA?CAACCEAKCQGQGKCCECCCEAC?G@OBS?KBQDQHg@?EBGDMBG@A"
+                            },
+                            "start_location": {
+                                "lat": 22.267476,
+                                "lng": 88.3554597
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.0 km",
+                                "value": 980
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 196
+                            },
+                            "end_location": {
+                                "lat": 22.2727376,
+                                "lng": 88.35443170000001
+                            },
+                            "html_instructions": "Turn <b>left</b><div style=\"font-size:0.9em\">Pass by Nainan Madrasha (on the left in 950&nbsp;m)</div>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "ma|fC{qhzOW?C?I?EBGBC@A@E?IAA?A??@ABCDCBCBOHKHE@C@E?CACASK_@SAA]Q_@SGAG?K?OBC@G?Y@S?M?SAMA[EWEg@KYGa@E[CW?_@HWHQJ[T[XWT[Z[b@QTMXINMb@Uv@_@jASf@IPKR]`@KHMPMRINKVIZGd@?D?@?B@@@@@?B?F?D?D@JB@??@@??@A??@?BADCFCJCRCZGXETGj@Ih@?TAT"
+                            },
+                            "start_location": {
+                                "lat": 22.2672724,
+                                "lng": 88.35885619999999
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "7 m",
+                                "value": 7
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 8
+                            },
+                            "end_location": {
+                                "lat": 22.2726705,
+                                "lng": 88.3544345
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>Dhamua Kalosh Rd</b>/<wbr/><b>Dhamua - Panchayed Rd</b>/<wbr/><b>Kalas - Nainan Rd</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "sc}fCevgzOL?"
+                            },
+                            "start_location": {
+                                "lat": 22.2727376,
+                                "lng": 88.35443170000001
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 212
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 58
+                            },
+                            "end_location": {
+                                "lat": 22.2732657,
+                                "lng": 88.3526509
+                            },
+                            "html_instructions": "Turn <b>right</b> at Nainan F.P School",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "ec}fCevgzODHLTBH@N?XCJCNMZADQ`@G\\IXIPEHKHA?IJKNKNIVCF?@A@A?A@A?"
+                            },
+                            "start_location": {
+                                "lat": 22.2726705,
+                                "lng": 88.3544345
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.6 km",
+                                "value": 1563
+                            },
+                            "duration": {
+                                "text": "5 mins",
+                                "value": 288
+                            },
+                            "end_location": {
+                                "lat": 22.2723922,
+                                "lng": 88.33987049999999
+                            },
+                            "html_instructions": "Turn <b>right</b><div style=\"font-size:0.9em\">Pass by নুরানী জামে মসজিদ (on the right)</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "}f}fCakgzOA?KAG@K@GBCBA@ABEHERE^EX?L?LAX@L@H@FDHHTBR@H?N?LALANCJITCDCFE@OBMBC@CBCDCJCFCJEZCTE^ARIl@Cb@CTEx@Ar@AP?D?b@@d@@TDTB`@Bd@@l@?ZAT?HGl@Il@EZCVC^CRALE\\AVCZEZQx@AFMp@U`BY~AIp@Mh@CJOt@Kb@Md@Ib@Af@Gz@Gd@CN?BAB?D@??@@BB@JDVJLFDBPHTFRFTHLBLFRJNHXLh@RFBLDPJDDDBHBLDHFFDLJPRXZPTHHLLV\\JJTVJLRVFJDHBH"
+                            },
+                            "start_location": {
+                                "lat": 22.2732657,
+                                "lng": 88.3526509
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "47 m",
+                                "value": 47
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 16
+                            },
+                            "end_location": {
+                                "lat": 22.2726905,
+                                "lng": 88.33954380000002
+                            },
+                            "html_instructions": "Turn <b>right</b> at the bridge toward <b>Chakdaha - Magurpukur Rd</b>/<wbr/><b>Jhinki Magurpukur Road</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "ma}fCe{dzOUTSTMNCD"
+                            },
+                            "start_location": {
+                                "lat": 22.2723922,
+                                "lng": 88.33987049999999
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.7 km",
+                                "value": 1700
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 200
+                            },
+                            "end_location": {
+                                "lat": 22.2604269,
+                                "lng": 88.33011049999999
+                            },
+                            "html_instructions": "Turn <b>left</b> at the bridge onto <b>Chakdaha - Magurpukur Rd</b>/<wbr/><b>Jhinki Magurpukur Road</b><div style=\"font-size:0.9em\">Pass by Tiptop Salon (on the left in 1.4&nbsp;km)</div>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "ic}fCcydzOPNPRPRNRVX\\^\\b@XZ\\^TXTR\\b@VXXZl@v@jArAbAnATVt@x@tA~AVX@?~@bAJJd@h@`@b@j@h@|@p@LF~@n@FDZPf@Vh@Vx@Zb@Pz@\\dBn@jBr@~Bx@PHtAf@j@Pb@PZLl@VRH`@P`@NTHB@bBl@fAd@z@d@`Ar@XRf@n@^d@\\V"
+                            },
+                            "start_location": {
+                                "lat": 22.2726905,
+                                "lng": 88.33954380000002
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "7.7 km",
+                                "value": 7692
+                            },
+                            "duration": {
+                                "text": "19 mins",
+                                "value": 1155
+                            },
+                            "end_location": {
+                                "lat": 22.2380522,
+                                "lng": 88.272519
+                            },
+                            "html_instructions": "Turn <b>right</b> at Palash Tea Shop onto <b>Magrahat II - Usthi Rd</b>/<wbr/><b>Sangrampur - Samashat Rd</b><div style=\"font-size:0.9em\">Pass by the pharmacy (on the right)</div><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "uvzfCe~bzOS|@On@ERETE\\A@C`@A`@Ah@ARARETKl@WlACJENKh@On@?BYlAGROt@Qz@UbACLQx@YhAQf@YdASz@CHQn@K\\GVI\\EPGVCRCVATC\\Af@Cl@?b@A\\?f@?^Ab@ATAXARCd@Gn@?BCXCj@Et@Ef@CXAJCf@AHC`@EdAARC`@AZOtCA\\Aj@C^?N?P?L@F?VBVDj@@P@F?NBTBh@Dj@B\\B`@Dt@Bd@Dn@B\\Bd@NtADf@JjADh@Hv@?BJ`AFr@?BJ`AFb@J|@Fp@BPHfAHr@B^Hv@Fh@H~@Dp@JjAB^@DB\\Df@JfADd@Fh@H|@D\\Ft@BTDb@Dd@JbAFv@BLB^Hp@B^H|@Df@JbAJpAHhABVF\\Fn@@DB^BTJ~@Dh@Fh@BZH~@DZFn@Hh@DZDXFXLb@FRFVL\\L\\LXPZRb@Xd@T\\TZV\\NPRPZVvAlAh@`@ZXRLlAdAHFh@`@`@Xb@^^Xx@r@^ZJHPNb@ZJHXTXP\\RXPb@XVPHDt@d@t@d@B@`Af@B@j@\\jAp@`@Pf@T`@TdAj@DBn@`@h@ZtA|@hAv@|@n@dAt@NJh@^`@VLFXNZP^Pz@^`@Tj@Xd@RHDLFj@Zn@^THXJPHRJ@?PJPLn@d@bAp@v@j@^TVR^TTNb@V\\T`@RVPFBh@Xr@Xr@VFBvAh@^NTHx@Z^JXLj@Rd@PfA^t@Zx@Xh@Rz@Zb@NhBp@~@\\pAd@`@Np@ThBl@j@Pj@Pd@PTJPHPRRRRRRRLPDHFJDJNZJTXz@Pf@HTJXJ\\LXBJHRN^DNFNJTHXJZFTBPBNDR@PBN?JBZBPBPBZDVF^BVDZDXDPDJBFHN?BBDFFFFDFLNRTTVPPTV\\\\VX@@v@v@RRPPNLHJDFBFDLBLBJ@JBV@NBTFhADvA@X?R?d@?VAHAHEZADGTI\\Ol@Od@ABQp@Sr@Oh@Mn@GXShAO~@?@CJId@ENAPAV?X?R?VAPAFELGNINQXKLEHMJSLGDE@IBWBSBE?UBS@c@BC?q@Dq@D_@BQBSB"
+                            },
+                            "start_location": {
+                                "lat": 22.2604269,
+                                "lng": 88.33011049999999
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "kz{fCaxgzOLw@DGNGNQEECMIa@GESEk@Ki@COBw@T[Fk@?OCYC?_ALaAXcALo@@sBL[N{@AIUIc@OOIIUDo@RqAN_@[?OBSFKACDGHSLQJI@{@c@gAi@g@DcA@a@Cs@KaAS}@IW?_@Hi@Tw@n@s@p@m@x@Wh@c@zAs@rBUd@i@j@[d@Uf@Q`A?FBFL?XFETStAM`AI~@ATL?R^DXCd@e@rAQv@OZc@d@Yp@GBa@@OLK\\Kx@?bABPDHLh@@HCz@Un@g@JGHGRS|ASzBIdC@hAFj@FfA@hAA^QzAQfBGj@Er@WtAOx@gA|Gm@jCIb@Af@O`BE\\FFv@\\pAb@~@`@xAj@f@XVLTPfAnAfAnA^d@LTBHUTa@d@CDPNb@f@bBpBbBhB|BpCnCbDjApAnD|D~BbCrCnBbAh@bBr@pHrCrG|B~EnBjDrA|BxAXRf@n@^d@\\Vc@lBKh@G^EbAC|@Gh@m@vCuBtJUfAk@pBcAzDc@dBKj@El@IvCChCYbFa@|G_@`J@~@L|A^vG\\hE`@tEz@rI|@`Kt@nIxBhVr@jHZnD\\pCLr@Tv@Tt@Zv@d@~@n@bAl@x@b@b@xD`DtC|B`GxEd@^v@d@~AbAjBjAdAh@n@^lBbAtCzAxA|@~CtB|DpCdB`AhD`BhB|@dAh@j@Tx@d@jExCpBpA~A~@|Ar@z@ZfE~AjC~@jNdFlKnDf@Td@f@f@f@RZh@hA`ArCpAlD`@|ANdAJjATjBJt@J\\P`@tB~BnDpDHNHZJ~@BTL`D@jBKt@q@fCw@rCy@rESbACh@?l@Ah@GTQ^]f@ST[RODk@FsAHgCNe@F"
+            },
+            "summary": "Magrahat II - Usthi Rd/Sangrampur - Samashat Rd",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ],
+    "status": "OK"
+}

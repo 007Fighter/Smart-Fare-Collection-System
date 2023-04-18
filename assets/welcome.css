@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?fmily=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(https://www.hdwallpapers.in/download/green_abstract_gradient-wide.jpg);
+    color: #fff;
+}
+.service{
+    padding: 100px 0;
+    font-family: 'poppins',sans-serif;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+.max-width h1{
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.max-width h1::after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    padding: 50px 30px;
+    width: calc(30% - 40px);
+    border-radius: 30px;
+    background: #222;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 15px;
+}
+.card:hover{
+    background-color:#8a113a;
+}
+.box{
+    transition: all 0.3s ease;
+}
+.card:hover .box{
+    transform: scale(1.05);
+}
+.box i{
+    font-size: 40px;
+    color: #dc143c;
+    transition:color 0.3s ease;
+}
+.card:hover .box i{
+    color: #fff;
+}
+.box h3{
+    font-size: 20px;
+    padding: 10px 1 5px;
+    /* border-collapse: separate;
+    border-spacing: 15px 15px; */
+}
+@media screen and (max-width:1190px) {
+    .max-width{
+        padding: 0 25px;
+    }
+    .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:700px) {
+    .card{
+        width: 100%;
+    }
+}

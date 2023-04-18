@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/nav.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav>
+  <div class="menu">
+    <ul>
+      <li>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-address-book-o"></i> My Account</a>
+          <div class="dropdown-content">
+            <a href="/officer/profile"> My Profile </a>
+            <a href="/officer/updatePassword"> Change Password </a>
+            <a href="/officer/query"> Queries Recieved </a>
+            <a href="/officer/helpdesk"><i class="fa fa-phone-square"> Help Desk</i></a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <a href="#">Manage Passengers</a>
+          <div class="dropdown-content">
+            <a href="/officer/freshPass">Fresh Application</a>
+            <a href="/officer/activePass">Active Passengers</a>
+            <a href="/officer/editPass">Edit Passenger</a>
+            <a href="/officer/rejectedPass">Rejected Application</a>
+            <a href="/officer/addPass">Add New Passenger</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <a href="#">Manage Vehicles</a>
+            <div class="dropdown-content">
+              <a href="/officer/addVehicle">Add New Vehicles</a>
+              <a href="/officer/registeredVehicle">Registered Vehicles</a>
+            </div>
+        </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="#">Revenue</a>
+            <div class="dropdown-content">
+              <a href="/officer/totalRev">Total Collection</a>
+              <a href="/officer/addToken">Collect Now</a>
+            </div>
+        </div>
+        </li>
+        <li>
+          <p><i class="fa fa-address-book-o"></i> Welcome <%- user.name %></p>
+          <p>Designation : <%- user.designation %></p>
+          <a href="/auth/logout"><i class="fa fa-sign-out"> Log Out </i></a>
+        </li>
+    </ul>
+  </div>
+</nav>

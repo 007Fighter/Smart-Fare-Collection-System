@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2><%= title %></h2>
+  <a href="/add" class="btn btn-sm btn-primary">Add Passenger</a><br/><br/>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>1st coloumn</th>
+        <th>2nd Coloumn</th>
+        <th>3rd Coloumn</th>
+        <th>4th Coloumn</th>
+        <th>5th Coloumn</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% passengers.forEach(function(passenger){ %>
+            <tr>
+                <td>Name : <%= passenger.Name %><br>RTO : <%= passenger.nearest_RTO %> <br> Passenger ID : <%= passenger.User_ID %> </td>
+                <td>Card No. : <%= passenger.CARD_no %><br> Email : <%= passenger.Email %> <br> Contact : <%= passenger.Contact %> </td>
+                <td> DOB : <%= passenger.DOB %><br> POB : <%= passenger.POB %> <br> <%= passenger.ID_type %> : <%= passenger.ID_no %>  </td>
+                <td> Address : <%=passenger.Address %><br> Pincode: <%= passenger.PIN %></td>
+                <td>
+                  <a href="edit/<%= passenger.User_ID %>" class="btn btn-sm btn-primary">Accept</a>
+                  <a href="delete/<%= passenger.User_ID %>" class="btn btn-sm btn-danger">Reject</a>
+              </td>
+               
+            </tr>
+        <% }); %>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

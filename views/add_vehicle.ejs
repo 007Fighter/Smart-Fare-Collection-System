@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add New Vehicle</title>
+	<link rel="stylesheet"  href="/registration.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+	<%- include('officer_header') %>
+	<div class="container">
+		<div class="title">Register New Vehicle</div>
+		<form action="/officer/addVehicle" method="post"><br><br>
+			<table>
+			<tr>
+				<td class="tag"><label> <b>Vehicle Number</b></label></td><td>
+				<input type="text" placeholder="Enter Vehicle Number" name="vehicle_num" required></td>
+				<td class="tag"><label> <b> MCU Board No </b> </label></td><td>
+				<input type="text" placeholder="Enter MCU Board No." name="mcu_num" required></td>
+			</tr>
+			<tr>
+				<td class="tag"><label> <b> Owner Name</b></label></td><td>
+				<input type="text" placeholder=" Enter Owner Name" name="owner_name" required></td>
+				<td class="tag"><label> <b> Owner Contact </b></label></td><td>
+				<input type="number" placeholder="Enter Owner Contact" name="owner_contact" min="5000000000" max="9999999999" required></td>
+			</tr>
+			<tr>
+				<td class="tag"><label> <b> Driver Name </b></label></td><td>
+				<input type="text" placeholder="Enter Driver Name" name="driver_name" required></td>
+				<td class="tag"><label><b>Driver Contact </b></label></td><td>
+				<input type="number" placeholder="Enter Driver Contact" name="driver_contact" min="5000000000" max="9999999999" required></td>
+			</tr>
+			</table><center>
+				<input type="submit" value="Register">
+				<input type="reset" value="Reset"></center>
+		</form>
+	<div class="dialogue">
+	</div>
+</div><br><br>
+<%- include('footer')	%>
+</body>
+</html>

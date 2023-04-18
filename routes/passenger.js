@@ -88,6 +88,6 @@ router.post('/addToken', AuthController.isPassengerLoggedIn, PassController.addT
 
 router.post('/updatePass', AuthController.isPassengerLoggedIn, PassController.updatePassword);
 
-// router.post('/edit_profile', PassController.editPassProfile);
+router.post('/edit_profile', PassController.editPassProfile);
 
 module.exports = router;

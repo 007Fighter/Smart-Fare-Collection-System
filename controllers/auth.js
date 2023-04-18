@@ -1,4 +1,3 @@
-// const mysql = require("mysql");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const { promisify } = require("util");
@@ -19,7 +18,6 @@ module.exports = {
                 })
             }
             await connection.query('SELECT * FROM ?? WHERE ?? = ?', [role, field, data], async (err, rows) => {
-                // await connection.query('SELECT * FROM passenger WHERE email = ? OR `User_ID`= ?', [email, user_id], async (err, rows) => {
                 if(err) throw err;
                 console.log(rows);
                 let hashedPassword = await bcrypt.hash(password, 8);
@@ -63,7 +61,6 @@ module.exports = {
 
     register: async (req, res, next)=>{
         try{
-            // console.log(req.body);
             const { f_name, m_name, l_name, email, dob, pob, pincode, address, id_type, id_num, phone, rto, uid, password, passwordConfirm } = req.body;
             await connection.query('SELECT email, user_id from passenger WHERE email = ? OR user_id = ?', [email, uid], async (err, rows) => {
                 if (rows.length > 0) {
@@ -99,19 +96,15 @@ module.exports = {
     },
 
     isOfficerLoggedIn: async (req, res, next) => {
-        // console.log("Auth/Controller called");
-        // console.log(req.cookies.userSave);
         if (req.cookies.userSave) {
             try {
                 // 1. Verify the token
                 const decoded = await promisify(jwt.verify)(req.cookies.userSave,
                     process.env.JWT_SECRET
                 );
-                // console.log(decoded);
                 if(decoded.role == "officer"){
                     // 2. Check if the user still exist
                     connection.query('SELECT * FROM `officer` WHERE id_no = ?', [decoded.id], (err, rows) => {
-                        // console.log(rows);
                         if (!rows) {
                             return next();
                         }
@@ -130,19 +123,15 @@ module.exports = {
     },
 
     isPassengerLoggedIn: async (req, res, next) => {
-        // console.log("Auth/Controller called");
-        // console.log(req.cookies.userSave);
         if (req.cookies.userSave) {
             try {
                 // 1. Verify the token
                 const decoded = await promisify(jwt.verify)(req.cookies.userSave,
                     process.env.JWT_SECRET
                 );
-                // console.log(decoded);
                 if(decoded.role == "passenger"){
                     // 2. Check if the user still exist
                     connection.query('SELECT * FROM passenger WHERE id_no = ?', [decoded.id], (err, rows) => {
-                        // console.log(rows);
                         if (!rows) {
                             return next();
                         }
@@ -150,7 +139,6 @@ module.exports = {
                         req.user = rows[0];
                         req.user.role = "passenger";
                         return next();
-                        // decoded.name, decoded.id
                     });
                 }
             } catch (err) {
